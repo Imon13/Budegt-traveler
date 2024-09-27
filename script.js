@@ -22,6 +22,13 @@ for (const btn of allBtn) {
        li.appendChild(p)
        li.appendChild(p2)
        selectedContainer.appendChild(li)
+       const totalCostString = document.getElementById('total-cost').innerText
+       const totalCost = parseFloat(totalCostString)
+
+    //    document.getElementById('total-cost').innerText = totalCost + parseFloat(placePrice)
+       const sum = totalCost + parseFloat(placePrice)
+       setInnerText('total-cost',sum)
+    //    console.log(typeof totalCost)
     })
     
 }
